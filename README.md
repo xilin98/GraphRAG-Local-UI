@@ -1,6 +1,6 @@
-#  🕸️ GraphRAG Local with Interactive UI
+# 🕸️ GraphRAG Local with Interactive UI
 
-Welcome to **GraphRAG Local with Index/Prompt-Tuning and Querying/Chat UIs**! This project is an adaptation of Microsoft's [GraphRAG](https://github.com/microsoft/graphrag), tailored to support local models and featuring a comprehensive interactive user interface ecosystem. 
+Welcome to **GraphRAG Local with Index/Prompt-Tuning and Querying/Chat UIs**! This project is an adaptation of Microsoft's [GraphRAG](https://github.com/microsoft/graphrag), tailored to support local models and featuring a comprehensive interactive user interface ecosystem.
 
 ## 📄 Research Paper
 
@@ -32,14 +32,16 @@ For more details on the original GraphRAG implementation, please refer to the [G
 My vision for the GraphRAG Local UI ecosystem is to become the ultimate set of tools for working with GraphRAG and local LLMs, incorporating as many cool features and knowledge graph tools as possible. I am continuously working on improvements and new features.
 
 ### Recent Updates
-- [x] New API-centric architecture (`api.py`)
-- [x] Dedicated Indexing and Prompt Tuning UI (`index_app.py`)
-- [x] Improved file management and output exploration
-- [x] Background task handling for long-running operations
-- [x] Enhanced configuration options through environment variables and YAML files
-- [x] Web search capabilities
+
+- [X] New API-centric architecture (`api.py`)
+- [X] Dedicated Indexing and Prompt Tuning UI (`index_app.py`)
+- [X] Improved file management and output exploration
+- [X] Background task handling for long-running operations
+- [X] Enhanced configuration options through environment variables and YAML files
+- [X] Web search capabilities
 
 ### Upcoming Features
+
 - [ ] Dedicated Querying/Chat UI that interacts with the API
 - [ ] Dockerfile for easier deployment
 - [ ] Experimental: Mixture of Agents for Indexing/Query of knowledge graph
@@ -57,20 +59,20 @@ Feel free to open an Issue if you run into an error, and I will try to address i
 Follow these steps to set up and run the GraphRAG Local UI ecosystem:
 
 1. **Create and activate a new conda environment:**
-    ```bash
-    conda create -n graphrag-local -y
-    conda activate graphrag-local
-    ```
 
+   ```bash
+   conda create -n graphrag-local -y
+   conda activate graphrag-local
+   ```
 2. **Install the required packages:**
-    ```bash
-    pip install -r requirements.txt
-    ```
 
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Access the UIs:**
 
-6. **Access the UIs:**
-    - Indexing and Prompt Tuning UI: Open your web browser and navigate to `http://localhost:7861`
-    - Main UI (legacy): Open your web browser and navigate to `http://localhost:7860`
+   - Indexing and Prompt Tuning UI: Open your web browser and navigate to `http://localhost:7861`
+   - Main UI (legacy): Open your web browser and navigate to `http://localhost:7860`
 
 ## 🖥️ GraphRAG Application Ecosystem
 
@@ -81,12 +83,14 @@ The GraphRAG Local UI ecosystem consists of three main components, each serving 
 The `api.py` file serves as the backbone of the GraphRAG system, providing a robust FastAPI-based server that handles all core operations.
 
 Key features:
+
 - Manages indexing and prompt tuning processes
 - Handles various query types (local, global, and direct chat)
 - Integrates with local LLM and embedding models
 - Provides endpoints for file management and system configuration
 
 Usage:
+
 ```bash
 python api.py --host 0.0.0.0 --port 8012 --reload
 ```
@@ -96,15 +100,18 @@ python api.py --host 0.0.0.0 --port 8012 --reload
 The `index_app.py` file provides a user-friendly Gradio interface for managing the indexing and prompt tuning processes.
 
 Key features:
+
 - Configure and run indexing tasks
 - Set up and execute prompt tuning
 - Manage input files and explore output data
 - Adjust LLM and embedding settings
 
 Usage:
+
 ```bash
 python index_app.py
 ```
+
 Access the UI at `http://localhost:7861`
 
 ### 3. Main Interactive UI (Legacy App) (`app.py`)
@@ -112,19 +119,24 @@ Access the UI at `http://localhost:7861`
 The `app.py` file is the pre-existing main application, which is being phased out but still provides useful functionality.
 
 Key features:
+
 - Visualize knowledge graphs in 2D or 3D
 - Run queries and view results
 - Manage GraphRAG settings
 - Explore indexed data
 
 Usage:
+
 ```bash
 python app.py
 ```
+
 or
+
 ```bash
 gradio app.py
 ```
+
 Access the UI at `http://localhost:7860`
 
 ### Workflow Integration

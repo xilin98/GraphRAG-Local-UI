@@ -1,0 +1,13 @@
+POST http://localhost:8012/v1/chat/completions
+Content-Type: application/json
+
+{
+    "model": "graphrag-local-search:latest",
+    "messages": [{"role": "user", "content": "What is GraphRAG?"}],
+    "query_options": {
+        "query_type": "local-search",
+        "selected_folder": "your_indexed_folder",
+        "community_level": 2,
+        "response_type": "Multiple Paragraphs"
+    }
+}

@@ -12,3 +12,5 @@ pyyaml
 requests
 duckduckgo-search
 ollama
+plotly
+lancedb

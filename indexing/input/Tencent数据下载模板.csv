@@ -1,0 +1,5 @@
+YextId,StoreID,externalID_360,externalID_baidu,externalID_tencent,externalID_navinfo,externalID_sogou,name,brandName_en,brandName_cn,address,address2,sublocality,city,state,phoneNumber,lat,lng,categoryID_360,categoryName_360,categoryID_baidu,categoryName_baidu,categoryID_sogou,categoryName_sogou,categoryName_tencent,categoryID_navinfo,categoryName_navinfo,business_status
+51500030,,,,4346267943601425058,,,CALZEDONIA(北京来福士店),,,东直门南大街1号北京来福士01层03号,,东城区,北京市,北京市,010-64049993,39.939871,116.432611,,,,,,,购物;服装店,,,1
+51500031,,,,,,,CALZEDONIA(北京来福士店),,,东直门南大街1号北京来福士01层03号,,东城区,北京市,北京市,010-64049993,39.939871,116.432611,,,,,,,购物;服装店,,,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,注意：,第一条是修改，带出腾讯pid；第二天是新增，无腾讯pid；pid是完整的文本格式,,,,,,,,,,,,,,,,,,,,,,,,
